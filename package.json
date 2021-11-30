@@ -19,5 +19,14 @@
   "bugs": {
     "url": "https://github.com/glaiveeeeeee/Guardian/issues"
   },
-  "homepage": "https://github.com/glaiveeeeeee/Guardian#readme"
+  "homepage": "https://github.com/glaiveeeeeee/Guardian#readme",
+  "dependencies": {
+    "colorette": "^2.0.16",
+    "discord.js": "^13.3.1",
+    "dotenv": "^10.0.0",
+    "mongoose": "^6.0.14",
+    "readdirp": "^3.6.0",
+    "reflect-metadata": "^0.1.13",
+    "tsyringe": "^4.6.0"
+  }
 }
