@@ -1,10 +1,15 @@
-import { connect, connection } from "mongoose";
-import { important } from "../Logger.js";
+import mongoose from 'mongoose';
+import { error, important } from "../Logger.js";
 
-export async function _establish(uri) {
-    await connect(uri);
-    connection.on('open', () => {
-       important('Established a connection with MongoDB'); 
+export async function establish(uri) {
+    mongoose.connect(uri, {
+        useNewUrlParser     : true,
+        useUnifiedTopology  : true,
+    })
+    .catch(err => error(err));
+    
+    mongoose.connection.on('connected', () => {
+        important('Connected to Mongo');
     });
 };
 
