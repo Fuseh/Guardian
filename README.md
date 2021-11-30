@@ -1,3 +1,3 @@
 # Guardian
 
-soonTM best moderation bot ww. idc what u do with the code
+soonTM second best moderation bot ww. idc what u do with the code
